@@ -23,7 +23,7 @@ const Home: FC = () => {
 
   useEffect(() => {
     LoadImage("wallpaper");
-  });
+  }, []);
 
   return (
     <Box
