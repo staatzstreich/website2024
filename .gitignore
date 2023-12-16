@@ -24,5 +24,4 @@ dist-ssr
 *.sw?
 
 # Weihnachtsseite
-assets/Weihnachten/
-components/Weihnachten/
+src/assets/Weihnachten/Weihnachten_*.png
