@@ -1,10 +1,9 @@
-import { FC, useEffect } from "react";
+import { FC } from "react";
 import { styled } from "@mui/material";
 import { useTranslation } from "react-i18next";
 import michael from "../assets/michael.jpg";
 import michael2x from "../assets/michael@2x.jpg";
 import michael3x from "../assets/michael@3x.jpg";
-import LoadImage from "../utils/LoadImage";
 
 const StyledRoundedImage = styled("img")({
   borderRadius: "220667px",
@@ -15,10 +14,6 @@ const StyledRoundedImage = styled("img")({
 
 const RoundedImage: FC = () => {
   const { t } = useTranslation();
-
-  useEffect(() => {
-    LoadImage("pictureImage");
-  });
 
   return (
     <StyledRoundedImage

@@ -1,8 +1,9 @@
-import { FC } from "react";
+import { FC, lazy } from "react";
 import { Route, Routes } from "react-router-dom";
-import Home from "./pages/Home";
 import NoMatch from "./pages/NoMatch";
-import Weihnachtsgruss from "./pages/Weihnachtsgruss";
+
+const Home = lazy(() => import("./pages/Home"));
+const Weihnachtsgruss = lazy(() => import("./pages/Weihnachtsgruss"));
 
 const App: FC = () => {
   return (

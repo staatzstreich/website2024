@@ -8,7 +8,6 @@ import About from "../components/About";
 import EmailButton from "../components/EmailButton";
 import Footer from "../components/Footer";
 import RoundedImage from "../components/RoundedImage";
-import LoadImage from "../utils/LoadImage";
 import spo from "../assets/st_peter_ording.jpg";
 
 const Home: FC = () => {
@@ -20,10 +19,6 @@ const Home: FC = () => {
       i18n.changeLanguage(language);
     }
   }, [i18n]);
-
-  useEffect(() => {
-    LoadImage("wallpaper");
-  }, []);
 
   return (
     <Box
