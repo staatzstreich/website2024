@@ -2,8 +2,8 @@ import { FC, useEffect } from "react";
 import { styled } from "@mui/material";
 import { useTranslation } from "react-i18next";
 import michael from "../assets/michael.jpg";
-import michaelx2 from "../assets/michael@2x.jpg";
-import michaelx3 from "../assets/michael@3x.jpg";
+import michael2x from "../assets/michael@2x.jpg";
+import michael3x from "../assets/michael@3x.jpg";
 import LoadImage from "../utils/LoadImage";
 
 const StyledRoundedImage = styled("img")({
@@ -24,7 +24,7 @@ const RoundedImage: FC = () => {
     <StyledRoundedImage
       id="pictureImage"
       src={michael}
-      srcSet={`${michael}, ${michaelx2} x2, ${michaelx3} x3`}
+      srcSet={`${michael}, ${michael2x} 2x, ${michael3x} 3x`}
       alt={t("ImageDescription")}
     />
   );
